@@ -157,7 +157,7 @@
   <div class="container mx-auto px-4 md:px-6 mt-4 md:mt-6">
     <div class="mb-6 justify-center relative flex border-b-4 border-gray-100">
       <div class="text-4xl mb-2 px-8 text-gray-800 bg-white absolute dv-bold rtl" style="top: -12px;">
-        <span class="text-orange-600">ވޮއިސް</span> ޚާއްސަ ރިޕޯޓް
+        <span class="text-orange-600">ކަރުސަތުނާމާ</span> ޚާއްސަ ރިޕޯޓް
       </div>
     </div>
     <a class="w-full" href="/{{$specialReport->id}}">

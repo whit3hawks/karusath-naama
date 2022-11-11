@@ -23,7 +23,7 @@
           <a class="flex items-center" href="/authors/{{$news->author->id}}">
             <div class="w-10 ml-4 h-10 bg-gray-100 rounded-full" style="background-image: url('{{$news->author->image}}'); background-size: cover; background-position: center;"></div>
             <div>
-              <div class="opacity-75 waheed">{{$news->author->name}}@if($news->author->is_voice_writer == 'yes'), ވޮއިސް@endif</div>
+              <div class="opacity-75 waheed">{{$news->author->name}}@if($news->author->is_voice_writer == 'yes'), ކަރުސަތުނާމާ@endif</div>
             </div>
           </a>
           <span class="opacity-50 mx-3">&#xb7;</span>

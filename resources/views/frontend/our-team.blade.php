@@ -5,7 +5,7 @@
   <div class="container mx-auto md:px-6 px-4">
     <div class="mb-6 justify-end flex border-b-4 border-gray-100">
       <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-orange-600 pb-4 opacity-80">
-        ވޮއިސް ޓީމް
+        ކަރުސަތުނާމާ ޓީމް
       </div>
     </div>
     <div class="grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-4 rtl mt-8">

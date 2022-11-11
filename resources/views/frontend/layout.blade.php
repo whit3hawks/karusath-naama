@@ -223,7 +223,7 @@
         <div class="flex items-center">
           <a href="" class="flex dv-bold rtl text-white md:text-lg text-sm py-4" style="line-height: 36px;">ރައީސް ނަޝީދަށް އިންސާފު ހޯދައިނުދެވި ދައުލަތުގެ ތަރުތީބު ގެއްލިއްޖެ: ދިޔާނާ</a>
           <div class="bg-white rounded-lg flex items-center py-2 ml-4 px-4">
-            <p class="dv-bold text-red-700 text-sm whitespace-nowrap text-white mr-2 rtl">ވޮއިސް ލައިވް</p>
+            <p class="dv-bold text-red-700 text-sm whitespace-nowrap text-white mr-2 rtl">ކަރުސަތުނާމާ ލައިވް</p>
             <div class="w-2 h-2 bg-red-700 rounded-full"></div>
           </div>
         </div>
