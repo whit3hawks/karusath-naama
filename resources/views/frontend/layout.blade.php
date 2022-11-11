@@ -199,6 +199,13 @@
           </div>
         </div>
         <div class="flex items-center">
+          <div class="flex items-center">
+            <div class="cursor-pointer flex" id="search-box-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 h-6 w-6 md:ml-0 ml-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
           <div class="cursor-pointer flex md:hidden" id="mobilenavbutton">
             <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
