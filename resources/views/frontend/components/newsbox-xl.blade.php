@@ -1,6 +1,6 @@
 <div class="container lg:px-0 px-4 md:px-6 mx-auto mt-16">
   <div class="mb-6 justify-end flex border-b-4 border-gray-100 md:mx-6">
-    <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-orange-600 pb-4 opacity-80">
+    <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-teal-400 pb-4 opacity-80">
       {{$heading}}
     </div>
   </div>

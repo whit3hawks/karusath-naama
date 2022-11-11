@@ -182,11 +182,11 @@
 
   </style>
   <div>
-    <nav class="w-full bg-primary fixed z-50">
+    <nav class="w-full bg-teal-400 fixed z-50">
       <div class="container justify-between rtl h-20 mx-auto px-6 flex items-center">
         <div class="flex">
           <div class="flex items-center">
-            <a href="/"><img class="h-12" src="/images/white-default-logo.png" alt="Voice Logo"></a>
+            <a href="/"><img class="h-12" src="/images/white-default-logo.png" alt="Karusath Naama Logo"></a>
           </div>
           <div class="mx-3 md:flex hidden">
             <ul class="flex">
@@ -284,7 +284,7 @@
         </div>
         <div class="mt-6">
           <form action="/search/news">
-            <div class="flex rounded-full items-center border border-orange-600 px-6 py-2">
+            <div class="flex rounded-full items-center border border-teal-400 px-6 py-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>

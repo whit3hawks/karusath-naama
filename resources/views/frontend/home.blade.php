@@ -125,7 +125,7 @@
   <div class="w-full rtl lg:flex lg:-mx-3">
     <div class="lg:w-2/5 w-full lg:mx-3 md:mb-0 mb-6">
       <div class="mb-6 justify-start flex border-b-4 border-gray-100 md:mt-0 mt-8">
-        <div class="text-xl dv-bold rtl border-b-4 -mb-1 border-orange-600 pb-4 opacity-80">
+        <div class="text-xl dv-bold rtl border-b-4 -mb-1 border-teal-400 pb-4 opacity-80">
           އެޑިޓަރުގެ ހޮވުން
         </div>
       </div>
@@ -199,7 +199,7 @@
         </svg>
         އެންމެ މަޤްބޫލު
       </div>
-      <div class="flex cursor-pointer items-center pl-6 text-xl dv-bold rtl border-b-4 -mb-1 border-orange-600 pb-4 opacity-80" id="latestbtn">
+      <div class="flex cursor-pointer items-center pl-6 text-xl dv-bold rtl border-b-4 -mb-1 border-teal-400 pb-4 opacity-80" id="latestbtn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 ml-4 h-5">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
         </svg>
@@ -272,10 +272,10 @@
 </div>
 @endisset
 @include('frontend.components.galleries',["heading"=>"ގެލެރީ","items"=>$galleries])
-@include('frontend.components.newsbox-xl',["heading"=>"ދީން","items"=>$religion,'adv'=> $home_religion_box_banner])
+@include('frontend.components.newsbox-sm',["heading"=>"ދީން","items"=>$religion,'adv'=> $home_religion_box_banner])
 @include('frontend.components.videos',["heading"=>"ވީޑިއޯ","items"=>$videos])
-@include('frontend.components.newsbox-xl',["heading"=>"ވިޔަފާރި","items"=>$business,'adv'=> $home_business_box_banner])
-@include('frontend.components.newsbox-port',["heading"=>"ލައިފްސްޓައިލް","items"=>$lifestyle])
+@include('frontend.components.newsbox-sm',["heading"=>"ވިޔަފާރި","items"=>$business,'adv'=> $home_business_box_banner])
+@include('frontend.components.newsbox-sm',["heading"=>"ލައިފްސްޓައިލް","items"=>$lifestyle])
 @include('frontend.components.newsbox-sm',["heading"=>"ވާހަކަ","items"=>$stories])
 @endsection
 @push('scripts')
@@ -284,10 +284,10 @@
     $('#latest-news').show();
     $('#popular-news').hide();
 
-    $('#popularbtn').removeClass('border-orange-600');
+    $('#popularbtn').removeClass('border-teal-400');
     $('#popularbtn').addClass('border-gray-200');
 
-    $('#latestbtn').addClass('border-orange-600');
+    $('#latestbtn').addClass('border-teal-400');
     $('#latestbtn').removeClass('border-gray-200');
   });
 
@@ -296,10 +296,10 @@
     $('#popular-news').show();
 
     $('#popularbtn').removeClass('border-gray-200');
-    $('#popularbtn').addClass('border-orange-600');
+    $('#popularbtn').addClass('border-teal-400');
 
     $('#latestbtn').addClass('border-gray-200');
-    $('#latestbtn').removeClass('border-orange-600');
+    $('#latestbtn').removeClass('border-teal-400');
   });
 
 </script>

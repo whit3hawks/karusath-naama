@@ -37,7 +37,7 @@
       <div class="w-full px-12 flex justify-right rtl">
         <div>
           <p class="dv-bold px-6 py-6 text-right rtl w-full text-white text-5xl" style="line-height: 80px;">{{$quote->quote}}</p>
-          <div class="border-t-4 border-orange-600 h-2 ml-40 mt-8 mr-6"></div>
+          <div class="border-t-4 border-teal-400 h-2 ml-40 mt-8 mr-6"></div>
           <p class="dv-bold px-6 py-6 text-right w-full rtl text-white text-4xl" style="line-height: 50px;">{{$quote->by}}</p>
         </div>
       </div>
