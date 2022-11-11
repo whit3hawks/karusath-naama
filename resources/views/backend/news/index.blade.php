@@ -126,7 +126,7 @@
           <td class="dv text-md text-left dv-bold py-4 px-6 whitespace-nowrap">
             <div class="flex flex-wrap" style="width:250px;">
               @foreach($post->tags as $tag)
-              <div class="flex items-center text-xs whitespace-none my-2 bg-gray-200 px-4 py-1 rounded-full mr-2"><span class="mr-1 text-orange-600">#</span>{{$tag->name}}</div>
+              <div class="flex items-center text-xs whitespace-none my-2 bg-gray-200 px-4 py-1 rounded-full mr-2"><span class="mr-1 text-teal-400">#</span>{{$tag->name}}</div>
               @endforeach
             </div>
           </td>

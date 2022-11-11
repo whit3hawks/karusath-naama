@@ -14,43 +14,38 @@
 </div>
 @endisset
 <div class="lg:mt-12 mt-4 md:mt-6 w-full">
-  <div class="container mx-auto md:px-6 px-4 mb-6 flex justify-end">
-    <div class="md:w-4/6 w-full">
-      <p class="dv-bold rtl lg:text-4xl text-3xl opacity-80 tracking-[.06em]" style="line-height: 60px;">{{$news->title}}</p>
-      <div class="text-xl pt-4 flex items-center mt-2 dv-bold rtl pb-6 flex items-center">
-        @isset($news->author)
-        <div class="flex items-center">
-          <a class="flex items-center" href="/authors/{{$news->author->id}}">
-            <div class="w-10 ml-4 h-10 bg-gray-100 rounded-full" style="background-image: url('{{$news->author->image}}'); background-size: cover; background-position: center;"></div>
-            <div>
-              <div class="opacity-75 waheed">{{$news->author->name}}@if($news->author->is_voice_writer == 'yes'), ކަރުސަތުނާމާ@endif</div>
-            </div>
-          </a>
-          <span class="opacity-50 mx-3">&#xb7;</span>
-        </div>
-        @endisset
-        <div class="opacity-50 text-sm en-font ltr">
-          {{Carbon\Carbon::parse($news->date)->format('d M Y')}} | {{Carbon\Carbon::parse($news->date)->format('H:i')}}
-        </div>
-      </div>
-    </div>
-    <div class="">
-
-    </div>
-  </div>
   <div class="container mx-auto flex">
     <div class="lg:-mx-3 w-full lg:flex flex-row-reverse">
       <div class="lg:w-4/6 lg:mx-2 mx-4">
+        <div class="w-full">
+          <p class="dv-bold rtl lg:text-4xl text-3xl opacity-80 tracking-[.06em]" style="line-height: 60px;">{{$news->title}}</p>
+          <div class="text-xl pt-4 flex items-center mt-2 dv-bold rtl pb-6 flex items-center">
+            @isset($news->author)
+            <div class="flex items-center">
+              <a class="flex items-center" href="/authors/{{$news->author->id}}">
+                <div class="w-10 ml-4 h-10 bg-gray-100 rounded-full" style="background-image: url('{{$news->author->image}}'); background-size: cover; background-position: center;"></div>
+                <div>
+                  <div class="opacity-75 waheed">{{$news->author->name}}@if($news->author->is_voice_writer == 'yes'), ކަރުސަތުނާމާ@endif</div>
+                </div>
+              </a>
+              <span class="opacity-50 mx-3">&#xb7;</span>
+            </div>
+            @endisset
+            <div class="opacity-50 text-sm en-font ltr">
+              {{Carbon\Carbon::parse($news->date)->format('d M Y')}} | {{Carbon\Carbon::parse($news->date)->format('H:i')}}
+            </div>
+          </div>
+        </div>
         <div>
           @if(isset($news->video))
           <div class="video-container">
             <iframe src="https://www.youtube.com/embed/{{$news->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
           </div>
           @else
-          <img class="w-full" src="{{$news->image}}" alt="" />
+          <img class="w-full rounded-2xl" src="{{$news->image}}" alt="" />
           @endif
           @isset($news->image_caption)
-          <div class="dv text-sm rtl opacity-50 bg-gray-50 px-3 py-3" style="line-height: 30px;">{{$news->image_caption}}</div>
+          <div class="dv text-sm rtl opacity-50 py-3" style="line-height: 30px;">{{$news->image_caption}}</div>
           @endisset
         </div>
         <div class="flex justify-center mt-8 md:hidden">
@@ -69,7 +64,7 @@
             <div class="pb-6">
               <div class="text-right flex justify-end font-semibold text-lg">
                 <div class="flex">
-                  <div class="flex bg-orange-600 text-white text-sm rounded-lg px-3 items-center justify-end border-b border-gray-100">
+                  <div class="flex bg-teal-400 text-white text-sm rounded-lg px-3 items-center justify-end border-b border-gray-100">
                     <span class="py-2">{{Carbon\Carbon::parse($liveBlog->datetime)->format('d M - H:i')}}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -100,9 +95,9 @@
             </div>
             @endisset
             @isset($news->editor_note)
-            <div class="bg-gray-100 p-6">
+            <div class="bg-gray-100 p-6 rounded-2xl">
               <div class="w-full">
-                <div class="text-lg rtl dv-bold text-orange-600 mb-4 border-b border-gray-200 pb-4">އެޑިޓަރުގެ ނޯޓް</div>
+                <div class="text-lg rtl dv-bold text-teal-400 mb-4 border-b border-gray-200 pb-4">އެޑިޓަރުގެ ނޯޓް</div>
                 <div class="text-sm rtl dv opacity-60" style="line-height: 36px;">{{$news->editor_note}}</div>
               </div>
             </div>
@@ -110,7 +105,7 @@
             <div class="mt-12 flex flex-wrap justify-end mb-6">
               @foreach($news->articleTags as $tag)
               <div class="bg-gray-50 rtl mb-4 ml-4 text-md rounded-full flex px-6 py-2 items-center text-gray-600 dv-bold">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                 </svg>
                 <a class="hover:underline" href="/{{$tag->slug}}">{{$tag->name}}</a>
@@ -171,7 +166,7 @@
                 {!! htmlFormSnippet() !!}
               </div>
               <div class="flex justify-end mt-6">
-                <input class="cursor-pointer bg-orange-600 text-white font-semibold rounded-lg px-6 py-3 hover:underline" type="submit" value="Submit" />
+                <input class="cursor-pointer bg-teal-400 text-white font-semibold rounded-lg px-6 py-3 hover:underline" type="submit" value="Submit" />
               </div>
             </div>
           </form>
@@ -204,9 +199,6 @@
           </div>
         </div>
         @endisset
-        @if(isset($advertorial) && count($advertorial) > 0)
-        @include('frontend.components.advertorial',["heading"=>"advertorial","items"=>$advertorial])
-        @endif
         @include('frontend.components.newsbox-side',["heading"=>"އެންމެ ފަސް","items"=>$latest])
         @isset($article_side_bottom)
         <div class="mb-6 px-4 md:px-6 md:flex hidden">

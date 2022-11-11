@@ -40,27 +40,12 @@ class HomeController extends Controller
         });
         $featuredMain = Cache::remember('featuredMain', $cacheDuration, function () use ($breaking) {
             return News::whereNotIn('id', [$breaking->id ?? 0])->whereHas('tags', function ($query) {
-                $query->where('slug', 1);
-            })->where('status', 1)->orderBy('date', 'DESC')->first();
-        });
-        $specialReport = Cache::remember('specialReport', $cacheDuration, function () {
-            return News::whereHas('tags', function ($query) {
-                $query->where('slug', 'special-report');
+                $query->where('slug', 'featured');
             })->where('status', 1)->orderBy('date', 'DESC')->first();
         });
         $featuredMid = Cache::remember('featuredMid', $cacheDuration, function () use ($featuredMain) {
             return News::whereNotIn('id', [$featuredMain->id ?? 0])->whereHas('tags', function ($query) {
-                $query->where('slug', 2);
-            })->where('status', 1)->orderBy('date', 'DESC')->first();
-        });
-        $featured = Cache::remember('featured', $cacheDuration, function ()  use ($featuredMain, $featuredMid) {
-            return News::whereNotIn('id', [$featuredMain->id ?? 0, $featuredMid->id ?? 0])->whereHas('tags', function ($query) {
-                $query->where('slug', 3);
-            })->where('status', 1)->orderBy('date', 'DESC')->limit(6)->get();
-        });
-        $editorsPick = Cache::remember('editorsPick', $cacheDuration, function ()  use ($featuredMain, $featuredMid) {
-            return News::whereNotIn('id', [$featuredMain->id ?? 0, $featuredMid->id ?? 0])->whereHas('tags', function ($query) {
-                $query->where('slug', 'editors-pick');
+                $query->where('slug', 'featured-mid');
             })->where('status', 1)->orderBy('date', 'DESC')->limit(4)->get();
         });
         $reports = Cache::remember('reports', $cacheDuration, function () {
@@ -94,22 +79,11 @@ class HomeController extends Controller
                 $query->where('slug', 'lifestyle');
             })->where('status', 1)->orderBy('date', 'DESC')->limit(8)->get();
         });
-        $stories = Cache::remember('stories', $cacheDuration, function () {
-            return News::whereHas('tags', function ($query) {
-                $query->where('slug', 'story');
-            })->where('status', 1)->orderBy('date', 'DESC')->limit(4)->get();
-        });
         $galleries = Cache::remember('galleries', $cacheDuration, function () {
             return  Gallery::orderBy('date', 'DESC')->where('status', 1)->limit(8)->get();
         });
         $videos = Cache::remember('videos', $cacheDuration, function () {
             return  Video::orderBy('date', 'DESC')->where('status', 1)->limit(4)->get();
-        });
-        $latest = Cache::remember('latestnews', $cacheDuration, function () {
-            return News::where('status', 1)->orderBy('date', 'DESC')->limit(8)->get();
-        });
-        $popular = Cache::remember('popularnews', $cacheDuration, function () {
-            return News::where('status', 1)->whereBetween('date', [Carbon::now()->subDays(30), Carbon::now()])->orderBy('visits', 'DESC')->limit(8)->get();
         });
 
         $home_top_banner = Cache::remember('adv:home_top_banner', 5, function () {
@@ -157,21 +131,15 @@ class HomeController extends Controller
         return view('frontend.home', [
             'menus' => $menus,
             'breaking' => $breaking,
-            'specialReport' => $specialReport,
             'reports' => $reports,
             'world' => $world,
             'religion' => $religion,
             'sports' => $sports,
-            'latest' => $latest,
-            'popular' => $popular,
             'business' => $business,
             'breakingRelated' => $breakingRelated,
             'lifestyle' => $lifestyle,
-            'stories' => $stories,
             'featuredMain' => $featuredMain,
             'featuredMid' => $featuredMid,
-            'featured' => $featured,
-            'editorsPick' => $editorsPick,
             'galleries' => $galleries,
             'videos' => $videos,
             'home_top_banner' => $home_top_banner,
@@ -212,12 +180,6 @@ class HomeController extends Controller
             $related = News::where('status', 1)->orderBy('date', 'DESC')->limit(8)->get();
             $latest = Cache::remember('latestnewsInside', $cacheDuration, function () {
                 return News::where('status', 1)->orderBy('date', 'DESC')->limit(6)->get();
-            });
-
-            $advertorial = Cache::remember('advertorial', $cacheDuration, function () {
-                return News::whereHas('tags', function ($query) {
-                    $query->where('slug', 'advertorial');
-                })->where('status', 1)->orderBy('date', 'DESC')->limit(4)->get();
             });
 
             $article_top_banner = Cache::remember('adv:article_top_banner', 5, function () {
@@ -268,7 +230,6 @@ class HomeController extends Controller
                     'latest' => $latest,
                     'news' => $news,
                     'is_news' => true,
-                    'advertorial' => $advertorial,
                     'article_top_banner' => $article_top_banner,
                     'article_side_top' => $article_side_top,
                     'article_side_bottom' => $article_side_bottom,

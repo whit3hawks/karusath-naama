@@ -47,8 +47,8 @@
   $('.slider').slick({
     autoplay: true
     , arrows: true
-    , prevArrow: "<button type='button' class='slick-prev pull-left rounded-full bg-white w-12 text-orange-600 h-12 flex justify-center items-center' style='position: absolute; left: 20px; top: 50%; z-index: 1000;'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M15 19l-7-7 7-7' /></svg></button>"
-    , nextArrow: "<button type='button' class='slick-prev pull-left rounded-full bg-white w-12 text-orange-600 h-12 flex justify-center items-center' style='position: absolute; right: 20px; top: 50%; z-index: 1000;'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7' /></svg></button>"
+    , prevArrow: "<button type='button' class='slick-prev pull-left rounded-full bg-white w-12 text-teal-400 h-12 flex justify-center items-center' style='position: absolute; left: 20px; top: 50%; z-index: 1000;'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M15 19l-7-7 7-7' /></svg></button>"
+    , nextArrow: "<button type='button' class='slick-prev pull-left rounded-full bg-white w-12 text-teal-400 h-12 flex justify-center items-center' style='position: absolute; right: 20px; top: 50%; z-index: 1000;'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7' /></svg></button>"
   });
 
 </script>

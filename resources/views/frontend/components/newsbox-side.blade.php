@@ -10,7 +10,7 @@
       <a href="/{{$item->id}}">
         <div class="flex -mx-3 mb-6">
           <div class="w-1/3 mx-3">
-            <img class="w-full" src="{{$item->small_thumb}}" alt="" />
+            <img class="w-full rounded-xl" src="{{$item->small_thumb}}" alt="" />
           </div>
           <div class="w-2/3 mx-3">
             <div class="ltr flex justify-end text-xs en-font text-sm rtl opacity-50">{{Carbon\Carbon::parse($item->date)->format('d M Y')}}</div>

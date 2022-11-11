@@ -30,7 +30,7 @@
 <div class="mt-6">
   <div class="flex container mx-auto px-6 justify-end">
     @foreach($tag->subTags as $subTag)
-    <a href="/{{$subTag->tag->slug}}" class="items-center text-sm hover:underline border border-gray-200 dv-bold px-6 py-2 ml-4 text-gray-700 rounded-full">{{$subTag->tag->name}} <span class="text-orange-600">#</span></a>
+    <a href="/{{$subTag->tag->slug}}" class="items-center text-sm hover:underline border border-gray-200 dv-bold px-6 py-2 ml-4 text-gray-700 rounded-full">{{$subTag->tag->name}} <span class="text-teal-400">#</span></a>
     @endforeach
   </div>
 </div>
