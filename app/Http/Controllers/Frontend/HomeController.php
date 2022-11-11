@@ -151,7 +151,7 @@ class HomeController extends Controller
 
 
         MetaTag::set('title', config('app.name'));
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', asset('/images/ogimage.png'));
 
         return view('frontend.home', [
@@ -242,8 +242,8 @@ class HomeController extends Controller
                 return  Adv::where('slot', 'comment_box_top_banner')->where('status', 1)->inRandomOrder()->first();
             });
 
-            MetaTag::set('title', $news->latin ?? 'Voice.mv');
-            MetaTag::set('description', $news->summary ?? 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+            MetaTag::set('title', $news->latin ?? 'Karusath Naama');
+            MetaTag::set('description', $news->summary ?? 'Think with us, act with us, create with us!');
             MetaTag::set('image',   $news->og_image ? $news->og_image : $news->thumb);
 
             if ($news->layout == 1) {
@@ -307,7 +307,7 @@ class HomeController extends Controller
             });
 
             MetaTag::set('title', config('app.name') . " - " . $tag->name);
-            MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+            MetaTag::set('description', 'Think with us, act with us, create with us!');
             MetaTag::set('image', asset('/images/ogimage.png'));
 
             return view('frontend.tag', [
@@ -346,7 +346,7 @@ class HomeController extends Controller
             });
 
             MetaTag::set('title', config('app.name') . " - " . $request->keywrod);
-            MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+            MetaTag::set('description', 'Think with us, act with us, create with us!');
             MetaTag::set('image', asset('/images/ogimage.png'));
 
             return view('frontend.search', [
@@ -378,7 +378,7 @@ class HomeController extends Controller
         });
 
         MetaTag::set('title', config('app.name') . " - " . $user->name);
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', asset('/images/ogimage.png'));
 
         return view('frontend.author', [
@@ -410,7 +410,7 @@ class HomeController extends Controller
         });
 
         MetaTag::set('title', config('app.name') . " - " . $gallery->latin);
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', $gallery->image);
 
         return view('frontend.gallery', [
@@ -443,7 +443,7 @@ class HomeController extends Controller
         });
 
         MetaTag::set('title', config('app.name') . " - " . $video->latin);
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', $video->image);
 
         return view('frontend.video', [
@@ -476,7 +476,7 @@ class HomeController extends Controller
         });
 
         MetaTag::set('title', config('app.name') . " - " . $quote->latin);
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', $quote->image);
 
         return view('frontend.quote', [
@@ -535,7 +535,7 @@ class HomeController extends Controller
         });
 
         MetaTag::set('title', config('app.name') . " - Our Team");
-        MetaTag::set('description', 'Voice is a media startup looking forward to disrupting the media landscape in the Maldives with the aim of being the voice of the political, sports, business and social community of the Maldives.');
+        MetaTag::set('description', 'Think with us, act with us, create with us!');
         MetaTag::set('image', asset('/images/ogimage.png'));
 
         return view('frontend.our-team', [

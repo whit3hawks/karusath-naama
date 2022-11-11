@@ -19,7 +19,7 @@ return [
             'url' => '',
 
             'title' => 'Latest News',
-            'description' => 'Latest news from Voice.mv',
+            'description' => 'Latest news from Karusath Naama',
             'language' => 'en-US',
 
             /*

@@ -41,7 +41,7 @@ Route::domain(config('app.url'))->group(function () {
   Route::get('/shot/quote/{id}', [NewsQuoteController::class, 'shot']);
   //Route::get('/shot/quote/{id}/make', [NewsQuoteController::class, 'generateShot']);
   Route::post('/comment', [HomeController::class, 'comment'])->middleware('throttle:10,1');
-  Route::get('/voice/our-team', [HomeController::class, 'ourTeam'])->middleware('throttle:20,2');
+  Route::get('/karusathnaama/our-team', [HomeController::class, 'ourTeam'])->middleware('throttle:20,2');
 });
 
 Route::get('/login', [LoginController::class, 'login'])->name('boli.login');

@@ -41,7 +41,7 @@ return [
      */
 
     'open_graph' => [
-        'site_name' => 'Voice.mv',
+        'site_name' => 'Karusath Naama',
         'type' => 'website',
     ],
 
@@ -54,8 +54,8 @@ return [
 
     'twitter' => [
         'card' => 'summary_large_image',
-        'creator' => '@thevoice_mv',
-        'site' => '@thevoice_mv',
+        'creator' => '@karusathnaamamedia',
+        'site' => '@karusathnaamamedia',
     ],
 
     /*

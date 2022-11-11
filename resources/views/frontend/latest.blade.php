@@ -4,13 +4,13 @@
 <rss version="2.0">
   <channel>
     <title>
-      <![CDATA[voice.mv]]>
+      <![CDATA[karusathnaama.com]]>
     </title>
     <link>
-    <![CDATA[https://voice.mv/news/latest]]>
+    <![CDATA[https://karusathnaama.com/news/latest]]>
     </link>
     <description>
-      <![CDATA[Voice.mv]]>
+      <![CDATA[Karusath Naama]]>
     </description>
     @foreach($news as $post)
     <item>
@@ -20,7 +20,7 @@
       <image>
         <![CDATA[{{$post->image}}]]>
       </image>
-      <link>https://voice.mv/{{ $post->id }}</link>
+      <link>https://karusathnaama.com/{{ $post->id }}</link>
       <description>
         <![CDATA[{!!$post->summary!!}]]>
       </description>

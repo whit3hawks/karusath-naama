@@ -27,7 +27,7 @@ class NewsPublished extends Notification
 
     public function toTwitter($news)
     {
-        return (new TwitterStatusUpdate($this->news->latin . ' https://voice.mv/' . $this->news->id));
+        return (new TwitterStatusUpdate($this->news->latin . ' https://karusathnaama.com/' . $this->news->id));
     }
 
     // public function toFacebookPoster($news)

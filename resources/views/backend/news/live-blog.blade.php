@@ -85,8 +85,8 @@
           , config: {
             endpoints: {
               byFile: @if(env('APP_ENV') == 'local')
-              'https://boli.boli.test/upload-news-image'
-              @else 'https://boli.voice.mv/upload-news-image'
+              'https://boli.karusathnaama.test/upload-news-image'
+              @else 'https://boli.karusathnaama.mv/upload-news-image'
               @endif
             , }
           }

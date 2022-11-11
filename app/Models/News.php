@@ -44,11 +44,7 @@ class News extends Model
     public function getImageAttribute($value)
     {
         if ($value) {
-            if (str_contains($value, 'voicemv-cdn')) {
-                return $value;
-            } else {
-                return config('filesystems.disks.do.url') . '/' . $value;
-            }
+            return config('filesystems.disks.do.url') . '/' . $value;
         } else {
             return asset('images/no-image.png');
         }
@@ -57,11 +53,7 @@ class News extends Model
     public function getThumbAttribute()
     {
         if ($this->image) {
-            if (str_contains($this->image, 'voicemv-cdn')) {
-                return $this->image;
-            } else {
-                return str_replace('original_', 'large_thumb_', $this->image);
-            }
+            return str_replace('original_', 'large_thumb_', $this->image);
         } else {
             return null;
         }
@@ -70,11 +62,7 @@ class News extends Model
     public function getSmallThumbAttribute()
     {
         if ($this->image) {
-            if (str_contains($this->image, 'voicemv-cdn')) {
-                return $this->image;
-            } else {
-                return str_replace('original_', 'small_thumb_', $this->image);
-            }
+            return str_replace('original_', 'small_thumb_', $this->image);
         } else {
             return null;
         }
@@ -83,11 +71,7 @@ class News extends Model
     public function getOgImageAttribute($value)
     {
         if ($value) {
-            if (str_contains($this->image, 'voicemv-cdn')) {
-                return $value;
-            } else {
-                return config('filesystems.disks.do.url') . '/' . $value;
-            }
+            return config('filesystems.disks.do.url') . '/' . $value;
         } else {
             return null;
         }
