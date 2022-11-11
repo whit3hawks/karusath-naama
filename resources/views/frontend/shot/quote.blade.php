@@ -46,7 +46,7 @@
       <div class="bg-black bg-opacity-50 w-full h-full"></div>
     </div>
     <div class="absolute top-0 z-20 left-0 w-full h-full">
-      <img src="/images/quote.png" class="w-full h-full" alt="" />
+      {{-- <img src="/images/quote.png" class="w-full h-full" alt="" /> --}}
     </div>
   </div>
 </body>
