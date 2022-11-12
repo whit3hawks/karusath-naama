@@ -17,7 +17,7 @@
   @endif
   @break
   @case('quote')
-  <div class="pr-4 pr-4 border-r-4 border-teal-400 md:pl-12 my-4">
+  <div class="pr-4 pr-4 border-r-4 border-jungle-green md:pl-12 my-4">
     <p class="text-md dv rtl opacity-50 flex mb-4" style="line-height: 40px;">
       {!!$block['data']['text']!!}
     </p>

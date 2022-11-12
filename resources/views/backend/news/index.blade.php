@@ -33,7 +33,7 @@
   <div class="py-6">
     <div class="grid md:grid-cols-3 grid-cols-1 gap-6">
       <div class="bg-gray-50 rounded-lg overflow-hidden flex items-center">
-        <div class="text-white bg-teal-400 flex items-center py-6 px-6 justify-center">
+        <div class="text-white bg-jungle-green flex items-center py-6 px-6 justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
           </svg>
@@ -126,7 +126,7 @@
           <td class="dv text-md text-left dv-bold py-4 px-6 whitespace-nowrap">
             <div class="flex flex-wrap" style="width:250px;">
               @foreach($post->tags as $tag)
-              <div class="flex items-center text-xs whitespace-none my-2 bg-gray-200 px-4 py-1 rounded-full mr-2"><span class="mr-1 text-teal-400">#</span>{{$tag->name}}</div>
+              <div class="flex items-center text-xs whitespace-none my-2 bg-gray-200 px-4 py-1 rounded-full mr-2"><span class="mr-1 border-jungle-green">#</span>{{$tag->name}}</div>
               @endforeach
             </div>
           </td>

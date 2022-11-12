@@ -83,7 +83,7 @@
     }
 
     .bg-primary {
-      background-color: #2dd4bf;
+      background-color: #44635B;
     }
 
     .en-font {
@@ -182,7 +182,7 @@
 
   </style>
   <div>
-    <nav class="w-full bg-teal-400 fixed z-50">
+    <nav class="w-full bg-jungle-green fixed z-50">
       <div class="container justify-between rtl h-20 mx-auto px-6 flex items-center">
         <div class="flex">
           <div class="flex items-center">
@@ -214,7 +214,7 @@
         </div>
       </div>
     </nav>
-    <div class="w-full bg-primary border-t fixed border-teal-400 z-40 hidden pt-20" id="mobilenav">
+    <div class="w-full bg-primary border-t fixed border-jungle-green z-40 hidden pt-20" id="mobilenav">
       <div class="w-full mx-3 flex">
         <ul class="w-full py-4">
           @foreach($menus as $menu)
@@ -273,16 +273,16 @@
       <div class="container md:px-6 mx-4">
         <div class="flex justify-between py-6">
           <a href="/"><img class="h-14" src="/images/white-default-logo.png" alt="Voice Logo"></a>
-          <button class="text-teal-400 w-12 h-12 rounded-full flex items-center justify-center" id="search-box-close-button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+          <button class="w-12 h-12 rounded-full flex items-center justify-center" id="search-box-close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-jungle-green" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
             </svg>
           </button>
         </div>
         <div class="mt-6">
           <form action="/search/news">
-            <div class="flex rounded-full items-center border border-teal-400 px-6 py-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <div class="flex rounded-full items-center border text-jungle-green px-6 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 border-jungle-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <input type="text" name="keyword" class="dv-bold text-gray-800 dv text-2xl flex items-center rtl focus:outline-none w-full px-6 py-2">

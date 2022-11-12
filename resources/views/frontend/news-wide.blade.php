@@ -99,7 +99,7 @@
                 @isset($news->editor_note)
                 <div class="bg-gray-100 p-6 rounded-2xl">
                   <div class="w-full">
-                    <div class="text-lg rtl dv-bold text-teal-400 mb-4 border-b border-gray-200 pb-4">އެޑިޓަރުގެ ނޯޓް</div>
+                    <div class="text-lg rtl dv-bold border-jungle-green mb-4 border-b border-gray-200 pb-4">އެޑިޓަރުގެ ނޯޓް</div>
                     <div class="text-sm rtl dv opacity-60" style="line-height: 36px;">{{$news->editor_note}}</div>
                   </div>
                 </div>
@@ -107,7 +107,7 @@
                 <div class="mt-12 flex flex-wrap justify-end mb-6">
                   @foreach($news->articleTags as $tag)
                   <div class="bg-gray-50 rtl mb-4 ml-4 text-md rounded-full flex px-6 py-2 items-center text-gray-600 dv-bold">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 border-jungle-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                     </svg>
                     <a class="hover:underline" href="/{{$tag->slug}}">{{$tag->name}}</a>
@@ -142,7 +142,7 @@
         {{-- comments --}}
         <div class="mt-12" id="commentslist">
           <div class="mb-6 justify-end flex border-b-4 border-gray-100 md:mx-0">
-            <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-teal-400 pb-4 opacity-80">
+            <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-jungle-green pb-4 opacity-80">
               ކޮމެންޓް
             </div>
           </div>
@@ -170,7 +170,7 @@
                 {!! htmlFormSnippet() !!}
               </div>
               <div class="flex justify-end mt-6">
-                <input class="cursor-pointer bg-teal-400 text-white font-semibold rounded-lg px-6 py-3 hover:underline" type="submit" value="Submit" />
+                <input class="cursor-pointer bg-jungle-green text-white font-semibold rounded-lg px-6 py-3 hover:underline" type="submit" value="Submit" />
               </div>
             </div>
           </form>

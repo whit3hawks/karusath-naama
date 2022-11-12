@@ -185,10 +185,10 @@
     $('#latest-news').show();
     $('#popular-news').hide();
 
-    $('#popularbtn').removeClass('border-teal-400');
+    $('#popularbtn').removeClass('border-jungle-green');
     $('#popularbtn').addClass('border-gray-200');
 
-    $('#latestbtn').addClass('border-teal-400');
+    $('#latestbtn').addClass('border-jungle-green');
     $('#latestbtn').removeClass('border-gray-200');
   });
 
@@ -197,10 +197,10 @@
     $('#popular-news').show();
 
     $('#popularbtn').removeClass('border-gray-200');
-    $('#popularbtn').addClass('border-teal-400');
+    $('#popularbtn').addClass('border-jungle-green');
 
     $('#latestbtn').addClass('border-gray-200');
-    $('#latestbtn').removeClass('border-teal-400');
+    $('#latestbtn').removeClass('border-jungle-green');
   });
 
 </script>

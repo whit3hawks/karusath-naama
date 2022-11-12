@@ -4,7 +4,7 @@
 <div class="mt-16">
   <div class="container mx-auto md:px-6 px-4">
     <div class="mb-6 justify-end flex border-b-4 border-gray-100">
-      <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-teal-400 pb-4 opacity-80">
+      <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-jungle-green pb-4 opacity-80">
         ކަރުސަތުނާމާ ޓީމް
       </div>
     </div>
