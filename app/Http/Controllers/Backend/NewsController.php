@@ -325,16 +325,17 @@ class NewsController extends Controller
 
     public function sendToTelegram($user_id, $latin)
     {
-        $user = User::find($user_id);
-        if (isset($user)) {
-            $telegram = new Api('626967427:AAEi-KT89LMBcHF9rdFW8l15IPGudgPIOG8');
-            $telegram->sendMessage([
-                'chat_id' => "-266670974",
-                'text' => $user->email . " has sent a new article for review, please review and publish. (" . $latin . ")"
-            ]);
+        // $user = User::find($user_id);
+        // if (isset($user)) {
+        //     $telegram = new Api('');
+        //     $telegram->sendMessage([
+        //         'chat_id' => "",
+        //         'text' => $user->email . " has sent a new article for review, please review and publish. (" . $latin . ")"
+        //     ]);
 
-            return true;
-        }
+        //     return true;
+        // }
+        return true;
     }
 
     public function sendToDraft($id)
