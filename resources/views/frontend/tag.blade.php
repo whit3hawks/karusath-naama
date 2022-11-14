@@ -1,32 +1,6 @@
 @extends('frontend.layout')
 
 @section('content')
-@isset($tag->cover)
-<div class="@if(!isset($tag->cover))md:my-20 my-12 @endif relative">
-  @if(isset($tag->cover))
-  <div class="h-72 overflow-hidden flex items-center" style="background-image: url('{{$tag->cover}}');background-size: cover;background-position: center;">
-  </div>
-  @endif
-  <div class="flex z-50 absolue top-0 h-full w-full items-center">
-    <div class="container mx-auto md:px-6 px-4">
-      <div class="md:flex relative rounded-xl" @if(isset($tag->cover)) style="top:-50px; background: #ffffff; padding: 40px 40px 0px 40px;" @endif>
-        <div class="flex md:hidden justify-center mb-6">
-          <div class="w-28 h-28 rounded-full" style="background-image: url('{{$tag->image}}'); background-size: cover; background-position: center;">
-          </div>
-        </div>
-        <div class="rtl">
-          <p class="dv-bold md:text-right text-center text-black md:text-4xl text-3xl text-white mb-6">{{$tag->name}}</p>
-          <p class="dv text-lg md:text-right text-center text-black  md:w-5/6 text-white" style="line-height: 38px;">{{$tag->summary}}</p>
-        </div>
-        <div class="ml-6 md:flex justify-center hidden">
-          <div class="w-28 h-28 rounded-full" style="background-image: url('{{$tag->image}}'); background-size: cover; background-position: center;">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-@endisset
 <div class="mt-6">
   <div class="flex container mx-auto px-6 justify-end">
     @foreach($tag->subTags as $subTag)

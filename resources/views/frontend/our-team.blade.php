@@ -3,8 +3,8 @@
 @section('content')
 <div class="mt-16">
   <div class="container mx-auto md:px-6 px-4">
-    <div class="mb-6 justify-end flex border-b-4 border-gray-100">
-      <div class="text-3xl dv-bold rtl border-b-4 -mb-1 border-jungle-green pb-4 opacity-80">
+    <div class="mb-6 justify-end flex border-b-2 border-gray-100">
+      <div class="text-3xl dv-bold rtl border-b-2 border-b-2 border-jungle-green pb-4 opacity-80">
         ކަރުސަތުނާމާ ޓީމް
       </div>
     </div>

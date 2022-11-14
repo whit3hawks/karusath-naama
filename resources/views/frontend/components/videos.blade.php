@@ -1,6 +1,6 @@
 <div class="bg-blacked w-full lg:py-12 py-6 mt-16">
   <div class="container lg:px-0 mx-auto px-4 md:px-6">
-    <div class="mb-6 justify-end flex border-b-4 border-white md:mx-6">
+    <div class="mb-6 justify-end flex border-b-2 border-white md:mx-6">
       <div class="text-3xl text-white dv-bold rtl pb-4">
         {{$heading}}
       </div>

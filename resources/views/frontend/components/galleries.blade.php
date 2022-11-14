@@ -1,7 +1,7 @@
 <div class="bg-blacked w-full lg:py-12 py-6 mt-16">
   <div class="container lg:px-0 mx-auto px-4 md:px-6">
-    <div class="mb-6 justify-end flex border-b-4 border-gray-100 md:mx-6">
-      <div class="text-3xl text-white dv-bold rtl border-b-4 -mb-1 border-white pb-4">
+    <div class="mb-6 justify-end flex border-b-2 border-gray-100 md:mx-6">
+      <div class="text-3xl text-white dv-bold rtl -mb-[0.1rem] border-white pb-4">
         {{$heading}}
       </div>
     </div>
