@@ -57,7 +57,7 @@
           ->whatsapp()
           !!}
         </div>
-        <div class="md:flex md:mt-6 mt-6">
+        <div class="md:flex md:mt-6 mt-6 lg:ml-[10rem] md:ml-0 ml-0">
           <div class="md:border-r w-full md:border-gray-100 md:pr-6 md:mr-6">
             @isset($news->liveBlogs)
             @foreach($news->liveBlogs as $liveBlog)
