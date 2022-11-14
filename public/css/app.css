@@ -755,6 +755,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-80 {
+  height: 20rem;
+}
 .h-20 {
   height: 5rem;
 }
@@ -1471,6 +1474,10 @@ video {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:h-8 {

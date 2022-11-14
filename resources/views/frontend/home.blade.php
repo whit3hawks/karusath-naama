@@ -69,8 +69,7 @@
     @isset($featuredMain)
     <a class="w-full flex md:px-6 px-4 md:pt-12 pt-4" href="/{{$featuredMain->id}}">
       <div class="w-full lg:flex rounded-2xl overflow-hidden">
-        <div class="md:w-1/2 w-full bg-gray-50 relative">
-          <img class="w-full" src="{{$featuredMain->thumb}}" alt="" />
+        <div class="md:w-1/2 w-full bg-gray-50 relative md:h-auto h-80" style="background-image:url('{{$featuredMain->thumb}}'); background-size:cover; background-position: center;">
           @if(count($featuredMain->liveBlogs) > 0) <div class="font-semibold text-sm uppercase text-white absolute top-4 right-4 z-20 bg-red-600 rounded-lg px-3 py-1 flex items-center">Live <div class="w-2 h-2 mr-2 rounded-full bg-white"></div>
           </div>
           @endif
